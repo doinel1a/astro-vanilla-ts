@@ -1,0 +1,24 @@
+{
+	"private": true,
+	"type": "module",
+	"author": {
+		"name": "Doinel Atanasiu",
+		"email": "doinel1atanasiu@gmail.com",
+		"url": "https://business-link.d1a.app"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/doinel1a/sf-web-site"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"astro": "^2.8.1"
+	}
+}

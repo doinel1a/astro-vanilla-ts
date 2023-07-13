@@ -94,7 +94,11 @@ module.exports = {
     'simple-import-sort/exports': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
-    'import/no-duplicates': 'error'
+    'import/no-duplicates': 'error',
     // end simple-import-sort
+
+    // unicorn
+    'unicorn/filename-case': 'off'
+    // end unicorn
   }
 };

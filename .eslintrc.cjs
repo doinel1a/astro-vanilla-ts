@@ -1,7 +1,13 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  plugins: ['simple-import-sort', 'import'],
-  extends: ['plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
+  plugins: ['import', 'simple-import-sort'],
+  extends: [
+    'plugin:jsx-a11y/recommended',
+    'plugin:promise/recommended',
+    'plugin:sonarjs/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:prettier/recommended'
+  ],
   overrides: [
     {
       files: ['*.astro'],

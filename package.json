@@ -1,40 +1,45 @@
 {
-	"private": true,
-	"type": "module",
-	"author": {
-		"name": "Doinel Atanasiu",
-		"email": "doinel1atanasiu@gmail.com",
-		"url": "https://business-link.d1a.app"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/doinel1a/sfbroker-web-site"
-	},
-	"license": "MIT",
-	"scripts": {
-		"postinstall": "npx husky install",
-		"lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
-		"lint:fix": "eslint --fix",
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.8.1"
-	},
-	"devDependencies": {
-		"@astrojs/tailwind": "^4.0.0",
-		"@commitlint/cli": "^17.6.6",
-		"@commitlint/config-conventional": "^17.6.6",
-		"@typescript-eslint/parser": "^6.0.0",
-		"autoprefixer": "^10.4.14",
-		"cssnano": "^6.0.1",
-		"eslint": "^8.44.0",
-		"eslint-plugin-astro": "^0.27.2",
-		"eslint-plugin-jsx-a11y": "^6.7.1",
-		"husky": "^8.0.3",
-		"postcss": "^8.4.25",
-		"tailwindcss": "^3.3.2"
-	}
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "Doinel Atanasiu",
+    "email": "doinel1atanasiu@gmail.com",
+    "url": "https://business-link.d1a.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doinel1a/sfbroker-web-site"
+  },
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npx husky install",
+    "lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.8.1"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^4.0.0",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-astro": "^0.27.2",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.25",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0",
+    "prettier-plugin-tailwindcss": "^0.4.0",
+    "tailwindcss": "^3.3.2"
+  }
 }

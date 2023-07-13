@@ -8,17 +8,22 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/doinel1a/sf-web-site"
+		"url": "https://github.com/doinel1a/sfbroker-web-site"
 	},
 	"license": "MIT",
 	"scripts": {
+		"postinstall": "npx husky install",
 		"dev": "astro dev",
-		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
 	"dependencies": {
 		"astro": "^2.8.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.6.6",
+		"@commitlint/config-conventional": "^17.6.6",
+		"husky": "^8.0.3"
 	}
 }

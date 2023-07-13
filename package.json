@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/doinel1a/sfbroker-web-site"
+    "url": "https://github.com/doinel1a/astro-vanilla-ts"
   },
   "license": "MIT",
   "scripts": {

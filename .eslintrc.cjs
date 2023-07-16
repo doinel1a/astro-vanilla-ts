@@ -11,11 +11,17 @@ module.exports = {
   overrides: [
     {
       files: ['*.astro'],
+      rules: {
+        indent: 'off'
+      }
+    },
+    {
+      files: ['*.astro'],
       plugins: ['astro'],
       env: {
-        node: true,
         'astro/astro': true,
-        es2020: true
+        node: true,
+        es2022: true
       },
       parser: 'astro-eslint-parser',
       parserOptions: {
@@ -49,8 +55,9 @@ module.exports = {
     {
       files: ['**/*.astro/*.js', '*.astro/*.js'],
       env: {
+        'astro/astro': true,
         browser: true,
-        es2020: true
+        es2022: true
       },
       parserOptions: {
         sourceType: 'module'
@@ -98,7 +105,8 @@ module.exports = {
     // end simple-import-sort
 
     // unicorn
-    'unicorn/filename-case': 'off'
+    'unicorn/filename-case': 'off',
+    'unicorn/prevent-abbreviations': 'off'
     // end unicorn
   }
 };

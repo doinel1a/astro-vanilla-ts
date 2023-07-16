@@ -1,6 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  plugins: ['import', 'simple-import-sort'],
+  plugins: [],
   extends: [
     'plugin:jsx-a11y/recommended',
     'plugin:promise/recommended',
@@ -95,14 +95,6 @@ module.exports = {
       }
     ],
     // end prettier
-
-    // simple-import-sort
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
-    'import/first': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-duplicates': 'error',
-    // end simple-import-sort
 
     // unicorn
     'unicorn/filename-case': 'off',

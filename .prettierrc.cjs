@@ -13,6 +13,7 @@ module.exports = {
   endOfLine: 'crlf',
   plugins: [
     'prettier-plugin-astro',
+    '@ianvs/prettier-plugin-sort-imports',
     'prettier-plugin-tailwindcss'
   ],
   pluginSearchDirs: false,

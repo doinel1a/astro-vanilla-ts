@@ -1,3 +1,21 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src",
+    "astro.config.mjs",
+    ".eslintrc.cjs",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.cjs",
+    "**/*.mjs",
+    "./tailwind.config.ts"
+  ]
 }

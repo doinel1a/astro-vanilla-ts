@@ -1,3 +1,5 @@
+.eslintrc.cjs
+
 # dependencies
 node_modules/
 .pnp

@@ -11,7 +11,10 @@ module.exports = {
   bracketSameLine: false,
   arrowParens: 'always',
   endOfLine: 'crlf',
-  plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
+  plugins: [
+    'prettier-plugin-astro',
+    'prettier-plugin-tailwindcss'
+  ],
   pluginSearchDirs: false,
   overrides: [
     {

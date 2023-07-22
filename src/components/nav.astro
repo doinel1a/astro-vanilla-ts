@@ -1,0 +1,28 @@
+<nav class='fixed top-0 flex w-full justify-between'>
+  <div
+    class='relative isolate flex w-full bg-accent-primary px-5 py-4 shadow-lg lg:w-auto'
+  >
+    <p
+      class='sm:text-2xlsm:text-2xl z-[1] text-xl font-semibold after:hidden md:text-3xl lg:after:block'
+    >
+      Astro Vanilla TypeScript — Template
+    </p>
+  </div>
+</nav>
+
+<style>
+  p::after {
+    --border: 34px;
+
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: calc(var(--border) * -1);
+    z-index: -1;
+    border: var(--border) solid transparent;
+    border-top: calc(var(--border) * 2) solid var(--accent-primary);
+    border-bottom: 0;
+  }
+</style>

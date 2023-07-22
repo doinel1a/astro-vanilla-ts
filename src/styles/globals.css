@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*
+      https://tailwindcss.com/docs/customizing-colors
+    */
+    --primary: #262626; /* neutral-800 */
+    --secondary: #171717; /* neutral-900 */
+    --tertiary: #404040; /* neutral-700 */
+    --color-dark: #303030;
+    --color-light: #f3f3f3;
+    --accent-primary: #2563eb; /* blue-600 */
+    --accent-primary-state: #1e40af; /* blue-800 */
+  }
+
+  html,
+  body {
+    @apply h-full w-full;
+  }
+
+  body {
+    @apply bg-primary text-color-light;
+  }
+}

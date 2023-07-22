@@ -21,7 +21,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.8.1"
+    "astro": "^2.8.1",
+    "sass": "^1.64.1"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^4.0.0",
@@ -48,4 +49,3 @@
     "tailwindcss": "^3.3.2"
   }
 }
-

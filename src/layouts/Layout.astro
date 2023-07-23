@@ -4,23 +4,61 @@ import '@/styles/globals.scss';
 import Footer from '@/components/footer.astro';
 import Nav from '@/components/nav.astro';
 import Octocat from '@/components/octocat.astro';
+import { DOMAIN } from '../../_config';
 
 export interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='utf8' />
-    <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
+
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='manifest' href='/app.webmanifest' />
+    <meta name='theme-color' content='#09090b' />
+
     <title>{title}</title>
+    <meta name='title' content={title} />
+    <meta name='description' content={description} />
+    <meta
+      name='keywords'
+      content='
+        astro ts vite, astrots vite, astro.ts vite, astro-ts vite,
+        astro typescript vite, astrotypescript vite, astro.typescript vite, astro-typescript vite,
+        astro ts vite template, astrots vite template, astro.ts vite template, astro-ts vite template,
+        astro ts vite boilerplate, astrots vite boilerplate, astro.ts vite boilerplate, astro-ts vite boilerplate,
+        astro typescript vite template, astrotypescript vite template, astro.typescript vite template, astro-typescript vite template,
+        astro typescript vite boilerplate, astrotypescript vite boilerplate, astro.typescript vite boilerplate, astro-typescript vite boilerplate,
+        typescript, ts, astro-typescript, astro-ts, development, template, boilerplate, template-boilerplate, boilerplate-frontend, starter-kit, vite, husky, eslint, commitlint, prettier, postcss, tailwind, tailwindcss, sass, scss, css, github, website, landing page, landingpage, portfolio, blog, web app, web-app, webapp, spa 
+      '
+    />
+
+    <meta property='og:url' content=`https://${DOMAIN}` />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:image' content='/og.png' />
+
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:domain' content={DOMAIN} />
+    <meta property='twitter:url' content=`https://${DOMAIN}` />
+    <meta name='twitter:title' content={title} />
+    <meta name='twitter:description' content={description} />
+    <meta name='twitter:image' content='/og.png' />
+
+    <meta
+      name='google-site-verification'
+      content='43hCqye5FYTS4SnBMPKNFP-wBhfLHwRBykWJF1WJawo'
+    />
+    <script defer src='/_vercel/insights/script.js'></script>
   </head>
   <body>
     <Nav />

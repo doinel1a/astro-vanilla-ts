@@ -1,7 +1,7 @@
 [node]: https://nodejs.org/en
 [yarn]: https://yarnpkg.com
 [pnpm]: https://pnpm.io
-[demo]: https://vite-vanilla-js.d1a.app
+[demo]: https://astro-vanilla-ts.d1a.app
 [license]: https://github.com/doinel1a/astro-vanilla-ts/blob/main/LICENSE
 [code-of-conduct]: https://github.com/doinel1a/astro-vanilla-ts/blob/main/CODE_OF_CONDUCT.md
 [issues]: https://github.com/doinel1a/astro-vanilla-ts/issues

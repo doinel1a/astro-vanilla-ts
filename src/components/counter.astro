@@ -2,15 +2,15 @@
 import Button from './button.astro';
 ---
 
-<section
+<div
   class='container flex h-72 w-96 flex-col items-center justify-between rounded-xl border border-tertiary bg-secondary py-10 shadow-lg'
 >
-  <h2 id='counter' class='text-5xl font-semibold'>0</h2>
+  <p id='counter' class='text-5xl font-semibold'>0</p>
   <div class='flex gap-x-5'>
     <Button id='increment'>+ 1</Button>
     <Button id='decrement'>- 1</Button>
   </div>
-</section>
+</div>
 
 <script>
   const main = document.querySelector('main');

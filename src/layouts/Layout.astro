@@ -18,12 +18,9 @@ const { title, description } = Astro.props;
 <html lang='en'>
   <head>
     <meta charset='utf8' />
-    <meta name='viewport' content='width=device-width' />
+    <meta http-equiv='x-ua-compatible' content='ie=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta name='generator' content={Astro.generator} />
-
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <link rel='manifest' href='/app.webmanifest' />
-    <meta name='theme-color' content='#09090b' />
 
     <title>{title}</title>
     <meta name='title' content={title} />
@@ -41,7 +38,13 @@ const { title, description } = Astro.props;
       '
     />
 
-    <meta property='og:url' content=`https://${DOMAIN}` />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <link rel='manifest' href='/app.webmanifest' />
+    <meta name='theme-color' content='#09090b' />
+    <link rel='robots' href='/robots.txt' />
+    <link rel='sitemap' type='application/xml' href='/sitemap.xml' />
+
+    <meta property='og:url' content={`https://${DOMAIN}`} />
     <meta property='og:type' content='website' />
     <meta property='og:title' content={title} />
     <meta property='og:description' content={description} />
@@ -49,7 +52,7 @@ const { title, description } = Astro.props;
 
     <meta name='twitter:card' content='summary_large_image' />
     <meta property='twitter:domain' content={DOMAIN} />
-    <meta property='twitter:url' content=`https://${DOMAIN}` />
+    <meta property='twitter:url' content={`https://${DOMAIN}`} />
     <meta name='twitter:title' content={title} />
     <meta name='twitter:description' content={description} />
     <meta name='twitter:image' content='/og.png' />
@@ -61,6 +64,10 @@ const { title, description } = Astro.props;
     <script defer src='/_vercel/insights/script.js'></script>
   </head>
   <body>
+    <noscript class='h-2 w-1 text-center text-lg text-red-500'>
+      Enable JavaScript to enjoy all the features of this app.
+    </noscript>
+
     <Nav />
     <Octocat />
     <slot />

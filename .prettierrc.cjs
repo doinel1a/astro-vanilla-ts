@@ -24,5 +24,15 @@ module.exports = {
         parser: 'astro'
       }
     }
+  ],
+  importOrder: [
+    '<TYPES>',
+    '<TYPES>^[.]',
+    '',
+    '^react$',
+    '',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^[.]'
   ]
 };

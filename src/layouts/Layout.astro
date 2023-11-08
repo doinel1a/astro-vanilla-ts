@@ -1,9 +1,11 @@
 ---
 import '@/styles/globals.css';
 import '@/styles/globals.scss';
+
 import Footer from '@/components/footer.astro';
 import Nav from '@/components/nav.astro';
 import Octocat from '@/components/octocat.astro';
+
 import { DOMAIN } from '../../_config';
 
 export interface Props {
@@ -14,7 +16,7 @@ export interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
   <head>
     <meta charset='utf8' />

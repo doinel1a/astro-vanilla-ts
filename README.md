@@ -1,6 +1,6 @@
 [node]: https://nodejs.org/en
-[yarn]: https://yarnpkg.com
-[pnpm]: https://pnpm.io
+[pnpm]: https://pnpm.io/installation
+[yarn]: https://yarnpkg.com/getting-started/install
 [demo]: https://astro-vanilla-ts.d1a.app
 [license]: https://github.com/doinel1a/astro-vanilla-ts/blob/main/LICENSE
 [code-of-conduct]: https://github.com/doinel1a/astro-vanilla-ts/blob/main/CODE_OF_CONDUCT.md
@@ -9,14 +9,6 @@
 [browserslist]: https://browsersl.ist/#q=last+3+versions%2C%3E+0.2%25%2C+not+dead
 [graphviz]: https://www.graphviz.org/download
 [commitlint]: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
-[vite-react-ts-repo]: https://github.com/doinel1a/vite-react-ts-starter
-[vite-react-js-repo]: https://github.com/doinel1a/vite-react-js-starter
-[vite-vanilla-ts-repo]: ''
-[vite-vanilla-js-repo]: https://github.com/doinel1a/vite-vanilla-js
-[wp-react-ts-repo]: https://github.com/doinel1a/react-ts-starter
-[wp-react-js-repo]: ''
-[wp-vanilla-ts-repo]: ''
-[wp-vanilla-js-repo]: https://github.com/doinel1a/webpack-vanilla-js
 [react-icon]: https://skillicons.dev/icons?i=react
 [ts-icon]: https://skillicons.dev/icons?i=ts
 [js-icon]: https://skillicons.dev/icons?i=js
@@ -29,9 +21,11 @@
 
 # Astro Vanilla TypeScript — Template
 
+Boilerplate / template designed to quickly bootstrap an Astro.js project. It comes configured with TypeScript, TailwindCSS, Vite, SASS, SCSS, PostCSS, Eslint, Prettier, Husky and Commitlint.
+
 ---
 
-**[Demo][demo]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Bug(label: bug)][issues]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Feature(label: enhancement)][issues]**
+**[Demo][demo]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Bug (label: bug)][issues]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Feature (label: enhancement)][issues]**
 
 ---
 
@@ -52,8 +46,8 @@
 
 - JavaScript runtime **[node.js][node]**;
 - **(OPTIONAL)** Alternative package manager:
-  - **[PNPM][pnpm]** `npm install --global pnpm` <br /> or
-  - **[Yarn][yarn]** `npm install --global yarn`
+  - **[pnpm][pnpm]** <br /> or
+  - **[yarn][yarn]**
 
 ### Start developing:
 
@@ -63,7 +57,7 @@
     `git clone https://github.com/doinel1a/astro-vanilla-ts YOUR-PROJECT-NAME`;
 - Open your terminal or code editor to the path your project is located, and run:
 
-  |                                                  | **NPM**           | **PNPM**       | **Yarn**       |
+  |                                                  | **npm**           | **pnpm**       | **yarn**       |
   | ------------------------------------------------ | ----------------- | -------------- | -------------- |
   | To **install** the dependencies                  | `npm install`     | `pnpm install` | `yarn install` |
   | To **run** the **development server**            | `npm run dev`     | `pnpm dev`     | `yarn dev`     |
@@ -81,13 +75,10 @@ This repository comes 🔋 packed with:
 - **Astro**;
 - **TypeScript**;
 - **TailwindCSS**;
-- **SASS**;
+- **SASS** & **SCSS**;
 - **PostCSS**;
 - **Playwright**;
 - **Vite**;
-
-And with tools that enhance the development experience:
-
 - **ESLint**;
 - **Prettier**;
 - **Husky**;

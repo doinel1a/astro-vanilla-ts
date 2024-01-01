@@ -12,10 +12,10 @@
     "src",
     "astro.config.mjs",
     ".eslintrc.cjs",
+    "tailwind.config.ts",
     "**/*.js",
     "**/*.ts",
     "**/*.cjs",
-    "**/*.mjs",
-    "./tailwind.config.ts"
+    "**/*.mjs"
   ]
 }

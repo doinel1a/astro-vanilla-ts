@@ -2,11 +2,10 @@
 module.exports = {
   plugins: [],
   extends: [
-    'plugin:jsx-a11y/recommended',
     'plugin:promise/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
-    'plugin:prettier/recommended'
+    'plugin:jsx-a11y/recommended'
   ],
   overrides: [
     {
@@ -74,27 +73,6 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     // end
-
-    // prettier
-    'arrow-body-style': 'off',
-    'prefer-arrow-callback': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 80,
-        tabWidth: 2,
-        useTabs: false,
-        semi: true,
-        singleQuote: true,
-        jsxSingleQuote: true,
-        trailingComma: 'none',
-        bracketSpacing: true,
-        bracketSameLine: false,
-        arrowParens: 'always',
-        endOfLine: 'crlf'
-      }
-    ],
-    // end prettier
 
     // unicorn
     'unicorn/filename-case': 'off',

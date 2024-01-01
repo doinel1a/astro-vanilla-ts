@@ -2,6 +2,7 @@
 module.exports = {
   plugins: [],
   extends: [
+    'plugin:astro/recommended',
     'plugin:promise/recommended',
     'plugin:sonarjs/recommended',
     'plugin:unicorn/recommended',
@@ -10,17 +11,11 @@ module.exports = {
   overrides: [
     {
       files: ['*.astro'],
-      rules: {
-        indent: 'off'
-      }
-    },
-    {
-      files: ['*.astro'],
       plugins: ['astro'],
       env: {
-        'astro/astro': true,
         node: true,
-        es2022: true
+        'astro/astro': true,
+        es2020: true
       },
       parser: 'astro-eslint-parser',
       parserOptions: {
@@ -34,29 +29,10 @@ module.exports = {
       }
     },
     {
-      files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
-      extends: ['plugin:@typescript-eslint/recommended'],
-      rules: {
-        '@typescript-eslint/no-unused-vars': [
-          'error',
-          { argsIgnorePattern: '^_', destructuredArrayIgnorePattern: '^_' }
-        ],
-        '@typescript-eslint/no-non-null-assertion': 'off'
-      }
-    },
-    {
-      files: ['*.d.ts'],
-      rules: {
-        '@typescript-eslint/triple-slash-reference': 'off'
-      }
-    },
-    {
       files: ['**/*.astro/*.js', '*.astro/*.js'],
       env: {
-        'astro/astro': true,
         browser: true,
-        es2022: true
+        es2020: true
       },
       parserOptions: {
         sourceType: 'module'
@@ -64,6 +40,26 @@ module.exports = {
       rules: {
         'prettier/prettier': 'off'
       }
+    },
+    {
+      files: ['**/*.astro/*.ts', '*.astro/*.ts'],
+      env: {
+        browser: true,
+        es2020: true
+      },
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        sourceType: 'module',
+        project: null
+      },
+      rules: {
+        'prettier/prettier': 'off'
+      }
+    },
+    {
+      files: ['*.astro'],
+      processor: 'astro/client-side-ts',
+      rules: {}
     }
   ],
   rules: {

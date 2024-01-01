@@ -15,6 +15,7 @@
     "postinstall": "npx husky install && npx playwright install",
     "lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
     "lint:fix": "eslint --fix",
+    "prettier": "prettier --write **/**/*.{astro,css,scss,js,cjs,mjs,ts,tsx}",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

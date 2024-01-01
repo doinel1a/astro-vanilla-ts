@@ -1,5 +1,6 @@
 {
   "private": true,
+  "license": "MIT",
   "type": "module",
   "author": {
     "name": "Doinel Atanasiu",
@@ -10,7 +11,6 @@
     "type": "git",
     "url": "https://github.com/doinel1a/astro-vanilla-ts"
   },
-  "license": "MIT",
   "scripts": {
     "postinstall": "npx husky install",
     "lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
@@ -49,3 +49,4 @@
     "tailwindcss": "^3.4.0"
   }
 }
+

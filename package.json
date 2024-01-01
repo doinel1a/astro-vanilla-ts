@@ -12,7 +12,7 @@
     "url": "https://github.com/doinel1a/astro-vanilla-ts"
   },
   "scripts": {
-    "postinstall": "npx husky install",
+    "postinstall": "npx husky install && npx playwright install",
     "lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
     "lint:fix": "eslint --fix",
     "dev": "astro dev",
@@ -28,6 +28,7 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
+    "@playwright/test": "^1.40.1",
     "@typescript-eslint/eslint-plugin": "^6.17.0",
     "@typescript-eslint/parser": "^6.17.0",
     "autoprefixer": "^10.4.16",

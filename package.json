@@ -22,19 +22,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.0"
+    "astro": "^4.4.13"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
-    "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.2",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
-    "@playwright/test": "^1.41.2",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
-    "autoprefixer": "^10.4.17",
-    "cssnano": "^6.0.3",
-    "eslint": "^8.56.0",
+    "@playwright/test": "^1.42.1",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "autoprefixer": "^10.4.18",
+    "cssnano": "^6.1.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.31.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -46,8 +46,8 @@
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.11",
-    "sass": "^1.71.0",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "sass": "^1.71.1",
     "tailwindcss": "^3.4.1"
   }
 }

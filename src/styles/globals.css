@@ -1,11 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
   /*
-    https://tailwindcss.com/docs/customizing-colors
-  */
+  https://tailwindcss.com/docs/customizing-colors
+*/
   --primary: #262626; /* neutral-800 */
   --secondary: #171717; /* neutral-900 */
   --tertiary: #404040; /* neutral-700 */
@@ -15,7 +15,25 @@
   --accent-primary-state: #1e40af; /* blue-800 */
 }
 
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-color-light: var(--color-light);
+  --color-color-dark: var(--color-dark);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-state: var(--accent-primary-state);
+}
+
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
   html,
   body {
     @apply h-full w-full;

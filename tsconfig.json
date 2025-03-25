@@ -8,14 +8,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src",
-    "astro.config.mjs",
-    ".eslintrc.cjs",
-    "tailwind.config.ts",
-    "**/*.js",
-    "**/*.ts",
-    "**/*.cjs",
-    "**/*.mjs"
-  ]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }

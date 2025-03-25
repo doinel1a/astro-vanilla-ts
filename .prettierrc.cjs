@@ -10,7 +10,7 @@ module.exports = {
   bracketSpacing: true,
   bracketSameLine: false,
   arrowParens: 'always',
-  endOfLine: 'crlf',
+  endOfLine: 'lf',
   plugins: [
     'prettier-plugin-astro',
     '@ianvs/prettier-plugin-sort-imports',

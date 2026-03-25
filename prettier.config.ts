@@ -1,6 +1,5 @@
-/** @type {import("prettier").Config} */
-module.exports = {
-  printWidth: 100,
+const config = {
+  printWidth: 80,
   tabWidth: 2,
   useTabs: false,
   semi: true,
@@ -14,9 +13,8 @@ module.exports = {
   plugins: [
     'prettier-plugin-astro',
     '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-tailwindcss' // must be last
+    'prettier-plugin-tailwindcss' // Must be last
   ],
-  pluginSearchDirs: false,
   overrides: [
     {
       files: '*.astro',
@@ -27,3 +25,5 @@ module.exports = {
   ],
   importOrder: ['<TYPES>', '<TYPES>^[.]', '', '<THIRD_PARTY_MODULES>', '', '^[@]/', '', '^[.]']
 };
+
+export default config;

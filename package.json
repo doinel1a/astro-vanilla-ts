@@ -26,6 +26,7 @@
     "astro": "6.0.8"
   },
   "devDependencies": {
+    "@astrojs/sitemap": "3.7.1",
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
     "@ianvs/prettier-plugin-sort-imports": "4.7.1",

@@ -13,13 +13,14 @@
   },
   "scripts": {
     "postinstall": "husky & playwright install",
-    "lint": "eslint src/**/*.{astro,js,jsx,ts,tsx}",
-    "lint:fix": "eslint --fix",
-    "prettier": "prettier --write **/**/*.{astro,css,scss,js,cjs,mjs,ts,tsx}",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write **/**/*.{astro,html,css,scss,js,jsx,cjs,mjs,ts,tsx,mdx} --cache"
   },
   "dependencies": {
     "astro": "6.0.8"

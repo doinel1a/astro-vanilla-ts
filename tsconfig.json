@@ -4,7 +4,8 @@
     "jsx": "preserve",
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "_config": ["./_config.ts"]
     }
   },
   "include": [".astro/types.d.ts", "**/*"],

@@ -23,7 +23,16 @@ const config = {
       }
     }
   ],
-  importOrder: ['<TYPES>', '<TYPES>^[.]', '', '<THIRD_PARTY_MODULES>', '', '^[@]/', '', '^[.]']
+  importOrder: [
+    '<TYPES>',
+    '<TYPES>^[.]',
+    '',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^[@]/',
+    '',
+    '^[.]'
+  ]
 };
 
 export default config;

@@ -50,12 +50,5 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "sass": "^1.86.0",
     "tailwindcss": "^4.0.15"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp"
-    ]
   }
 }

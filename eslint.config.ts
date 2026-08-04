@@ -1,4 +1,4 @@
-import astroParser from 'astro-eslint-parser';
+import * as astroParser from 'astro-eslint-parser';
 import prettierConfig from 'eslint-config-prettier/flat';
 import eslintAstro from 'eslint-plugin-astro';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
@@ -41,10 +41,11 @@ export default defineConfig(
   unicorn.configs.recommended,
   {
     rules: {
-      'unicorn/prevent-abbreviations': [
+      'unicorn/name-replacements': [
         'error',
         {
           allowList: {
+            env: true,
             Props: true
           }
         }

@@ -25,12 +25,12 @@ import Button from './button.astro';
 
         switch (id) {
           case 'increment': {
-            counter.textContent = `${currentCount + 1}`;
+            counter.textContent = String(currentCount + 1);
 
             break;
           }
           case 'decrement': {
-            counter.textContent = `${currentCount - 1}`;
+            counter.textContent = String(currentCount - 1);
 
             break;
           }

@@ -2,10 +2,10 @@
 import Button from './button.astro';
 ---
 
-<div
-  class='border-tertiary bg-secondary container flex h-72 w-96 flex-col items-center justify-between rounded-xl border py-10 shadow-lg'
->
-  <p id='counter' class='text-5xl font-semibold'>0</p>
+<div class='border-tertiary bg-secondary container flex h-72 w-96 flex-col items-center justify-between rounded-xl border py-10 shadow-lg'>
+  <p id='counter' class='text-5xl font-semibold'>
+    0
+  </p>
   <div class='flex gap-x-5'>
     <Button id='increment'>+ 1</Button>
     <Button id='decrement'>- 1</Button>
@@ -19,21 +19,19 @@ import Button from './button.astro';
   if (main && counter) {
     main.addEventListener('click', (event: MouseEvent) => {
       const { id, tagName } = event.target as HTMLElement;
+      if (tagName !== 'BUTTON') {
+        return;
+      }
 
-      if (tagName === 'BUTTON') {
-        const currentCount = Number(counter.textContent);
-
-        switch (id) {
-          case 'increment': {
-            counter.textContent = String(currentCount + 1);
-
-            break;
-          }
-          case 'decrement': {
-            counter.textContent = String(currentCount - 1);
-
-            break;
-          }
+      const currentCount = Number(counter.textContent);
+      switch (id) {
+        case 'increment': {
+          counter.textContent = String(currentCount + 1);
+          break;
+        }
+        case 'decrement': {
+          counter.textContent = String(currentCount - 1);
+          break;
         }
       }
     });
